@@ -577,8 +577,8 @@ VOLUME /var/log
 
 # Only expose ssh port given the other services are not secured
 # forcing the user to open ssh tunnels or use docker run -p ports...
-# EXPOSE ${SELENIUM_PORT} ${VNC_PORT} ${SSHD_PORT} ${TOMCAT_PORT}
-EXPOSE ${SSHD_PORT}
+EXPOSE ${SELENIUM_PORT} ${VNC_PORT} ${SSHD_PORT} ${TOMCAT_PORT}
+#EXPOSE ${SSHD_PORT} {VNC_PORT}
 
 #================
 # Binary scripts
